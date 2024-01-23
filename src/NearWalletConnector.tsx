@@ -40,7 +40,8 @@ export const NearWalletConnector = () => {
     <div className="Header">
       <div>
         <button onClick={openModal}>Create Group</button>
-        <CustomModal isOpen={isModalOpen} onClose={closeModal} />      </div>
+        <CustomModal isOpen={isModalOpen} onClose={closeModal} />     
+      </div>
       <div>
         <button>View groups</button>
       </div>

@@ -1,0 +1,30 @@
+#root {
+    margin: 10 auto;
+    background-color: antiquewhite;
+  }
+
+.close_button_modeule{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin: 20px 100px;
+}
+
+.inputt{
+    padding: 8px 30px;
+    margin: auto 15px;
+    outline: none;
+    transition: border-color .4s ease;
+    border: 1px solid black;
+}
+
+.inputt:focus{
+    border-color: rgb(19, 227, 255);
+}

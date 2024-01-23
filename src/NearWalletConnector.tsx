@@ -1,7 +1,10 @@
 import { useMbWallet } from "@mintbase-js/react";
+import React, { useState } from 'react';
+import CustomModal from './modal';
 
 export const NearWalletConnector = () => {
   const { isConnected, selector, connect , activeAccountId } = useMbWallet();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleSignout = async () => {
     const wallet = await selector.wallet();
@@ -12,6 +15,13 @@ export const NearWalletConnector = () => {
     return connect();
   };
   
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   
 
   if (!isConnected) {
@@ -29,8 +39,8 @@ export const NearWalletConnector = () => {
   return (
     <div className="Header">
       <div>
-        <button>Create Group</button>
-      </div>
+        <button onClick={openModal}>Create Group</button>
+        <CustomModal isOpen={isModalOpen} onClose={closeModal} />      </div>
       <div>
         <button>View groups</button>
       </div>

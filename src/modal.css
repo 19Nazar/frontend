@@ -3,10 +3,12 @@
     background-color: antiquewhite;
   }
 
-.close_button_modeule{
+.buttons-container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 13px;    
 }
+
 
 .header{
     display: flex;
@@ -19,7 +21,7 @@ form{
 
 .inputt{
     padding: 8px 30px;
-    margin: auto 15px;
+    margin: auto 1%;
     outline: none;
     transition: border-color .4s ease;
     border: 1px solid black;
@@ -28,3 +30,4 @@ form{
 .inputt:focus{
     border-color: rgb(19, 227, 255);
 }
+

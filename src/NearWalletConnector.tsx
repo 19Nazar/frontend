@@ -43,6 +43,21 @@ export const NearWalletConnector = () => {
         <CustomModal isOpen={isModalOpen} onClose={closeModal} />     
       </div>
       <div>
+        <button>Add users to group</button>
+      </div>
+      <div>
+        <button>Set permission to the user</button>
+      </div>
+      <div>
+        <button>Delete User from group</button>
+      </div>
+      <div>
+        <button>Create event</button>
+      </div>
+      <div>
+        <button>Read event</button>
+      </div>
+      <div>
         <button>View groups</button>
       </div>
       <div>

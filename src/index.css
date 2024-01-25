@@ -38,6 +38,36 @@ button:hover {
   border-color: #000000;
 }
 
+.Tabs{
+  background-color: rgb(255, 247, 236);
+}
+
+.start_module{
+    display: flex;
+    justify-content: center;
+}
+
+.content_TabPanel{
+  padding-left: 8%;
+}
+
+.inputt{
+  padding: 8px 30px;
+  margin: auto 1%;
+  outline: none;
+  transition: border-color .4s ease;
+  border: 1px solid black;
+}
+
+.button_in_TabPanel{
+  position: relative;
+  left: 370px;
+}
+
+.inputt:focus{
+  border-color: rgb(19, 227, 255);
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {

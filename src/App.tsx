@@ -18,7 +18,6 @@ function App() {
                 <NearWalletConnector />
           </MintbaseWalletContextProvider>
       </div>
-      <div className="line"></div>
     </div>
     );
 }

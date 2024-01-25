@@ -21,9 +21,8 @@ const CustomModal: React.FC<CustomModalProps> = ({ isOpen, onClose, onGroupCreat
   };
 
   const handleCreate = () => {
-    // Ваша логика для обработки нажатия кнопки Create
+    // Logic for tap in button create
     console.log('Creating group:', groupName);
-    // Закрыть модальное окно
     onClose();
     onGroupCreate && onGroupCreate();
   };

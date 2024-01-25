@@ -5,9 +5,10 @@ import './modal.css';
 interface CustomModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onGroupCreate?: () => void; 
 }
 
-const CustomModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
+const CustomModal: React.FC<CustomModalProps> = ({ isOpen, onClose, onGroupCreate }) => {
   const [formCount, setFormCount] = useState(1);
   const [groupName, setGroupName] = useState('');
 
@@ -24,6 +25,7 @@ const CustomModal: React.FC<CustomModalProps> = ({ isOpen, onClose }) => {
     console.log('Creating group:', groupName);
     // Закрыть модальное окно
     onClose();
+    onGroupCreate && onGroupCreate();
   };
 
   const customStyles = {
